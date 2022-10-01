@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+       <div class="form-heading">
+        <h1>Registration Form</h1>
+       </div>
+       <div class="form-container">
+         <form action="" method="get" id="form" onclick="resetForm()">
+            <div class="input-control grid-item-1">
+              <label for="first-name">First name</label>
+              <input type="text" id="first-name" name="firstname">
+              <div class="error" id="first-name-invalid"></div>
+            </div>
+
+            <div class="input-control grid-item-2">
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" name="lasttname">
+              <div class="error" id="last-name-invalid"></div>
+            </div>
+
+            <div class="input-control grid-item-3">
+              <label for="email">Email</label>
+              <div style="display:flex">
+              <span id="at-symbol">@</span>
+              <input type="text" id="email" name="email">
+            </div>
+              <div class="error" id="email-invalid"></div>
+            </div>
+
+            <div class="input-control grid-item-4">
+              <label for="password">Password</label>
+              <div style="display:flex">
+                <span class="star-symbol">*</span>
+              <input type="password" id="password" class="password" name="password">
+            </div>
+              <div class="error" id="password-invalid"></div>
+            </div>
+
+            <div class="input-control grid-item-5">
+              <label for="cnf-password">Confirm Password</label>
+              <div style="display:flex">
+                
+                <span class="star-symbol">*</span>
+              <input type="text" class="password"  id="cnf-password" name="cnfpassword">
+              </div>
+              <div class="error" id="cnf-password-invalid"></div>
+            </div>   
+
+            <div class="input-control grid-item-6">
+                <input type="checkbox" id="tnc" name="tnc">
+                <label for="first-name">Agree to terms and conditions</label>
+              <div class="error" id="tnc-invalid"></div>
+            </div>
+
+            <div class="input-control grid-item-7">
+              
+             <button type="button" onclick="validate()" onclick="fun()">Submit form</button>
+              
+            </div>
+         </form>
+       </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
